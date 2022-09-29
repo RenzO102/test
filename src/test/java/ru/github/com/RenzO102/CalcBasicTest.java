@@ -1,10 +1,8 @@
 package ru.github.com.RenzO102;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -21,26 +19,19 @@ public class CalcBasicTest {
                 {15, 3, 18},
         });
     }
-
     @Parameterized.Parameter(0)
     public int firstSummand;
-
     @Parameterized.Parameter(1)
     public int secondSummand;
-
     @Parameterized.Parameter(2)
     public int sum;
-
     @Before
     public void initCalculator() {
-
     }
-
     @Test
     public void shouldBeTestParameterSum() {
         assertThat("Should be a different amount",firstSummand + secondSummand,is(sum));
     }
-
     @Test
     public void shouldBeTestParameterSubtraction() {
         assertThat(sum - firstSummand,is(secondSummand));
