@@ -18,6 +18,7 @@ public class CalcTest {
     public void shouldTestSumTwoDigits() {
         assertThat(3 - 2, is(1));
     }
+
     @Test
     public void shouldTestDifferenceTwoDigits() {
         assertThat(12 * 5, is(60));
