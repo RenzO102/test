@@ -32,8 +32,4 @@ public class CalcBasicTest {
     public void shouldBeTestParameterSum() {
         assertThat("Should be a different amount",firstSummand + secondSummand,is(sum));
     }
-    @Test
-    public void shouldBeTestParameterSubtraction() {
-        assertThat(sum - firstSummand,is(secondSummand));
-    }
 }
