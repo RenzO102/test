@@ -19,6 +19,6 @@ public class CalcTest {
 
     @Test
     public void shouldTestDifferenceTwoDigits() {
-        assertThat("Should be a different amount", 12 * 5, is(60));
+        assertThat("Should be wrong somewhere", 12 * 5, is(60));
     }
 }
