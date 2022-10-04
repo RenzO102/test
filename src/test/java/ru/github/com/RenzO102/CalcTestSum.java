@@ -10,22 +10,24 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(Parameterized.class)
-public class CalcBasicTest {
+public class CalcTestSum {
 
     @Parameterized.Parameter()
-    public int firstSummand;
+    public int f1;
     @Parameterized.Parameter(1)
-    public int secondSummand;
+    public int f2;
     @Parameterized.Parameter(2)
-    public int sum;
+    public int result;
 
-    @Parameterized.Parameters(name = "{index}: {0} + {1} = {2}")
+    @Parameterized.Parameters
     public static Iterable<Object[]> data() {
-        return Arrays.asList(new Object[][]{{1, 2, 3}, {2, 6, 8}, {18, 18, 36}, {15, 1, 16}, {15, 3, 18}});
+        Object[][] data = new Object[][]{{1, 2, 3}, {2, 6, 8}, {18, 18, 36}, {15, 1, 16}, {15, 3, 18}};
+        return Arrays.asList(data);
     }
 
     @Test
     public void shouldBeTestParameterSum() {
-        assertThat("Should be wrong somewhere", firstSummand + secondSummand, is(sum));
+        Calculator calc = new Calculator();
+        assertThat("Should be wrong somewhere", calc.sum(f1, f2), is(result));
     }
 }
