@@ -5,7 +5,7 @@ public class Calculator {
         return a + b;
     }
 
-    public int difference(int a, int b) {
+    public long difference(long a, long b) {
         return a - b;
     }
 

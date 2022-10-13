@@ -15,19 +15,24 @@ public class CalcTestMultiplication {
     @Parameterized.Parameter()
     public int d1;
     @Parameterized.Parameter(1)
-    public int d2;
+    public int multiplied;
     @Parameterized.Parameter(2)
     public int result;
 
     @Parameterized.Parameters
     public static Iterable<Object[]> data() {
-        Object[][] data = new Object[][]{{1, 2, 2}, {2, 6, 12}, {18, 18, 324}, {15, 1, 15}, {15, 0, 0}};
+        Object[][] data = new Object[][]{
+                {1, 2, 2},
+                {2, 6, 12},
+                {18, 18, 324},
+                {15, 1, 15},
+                {2147483647, 2, -2}};
         return Arrays.asList(data);
     }
 
     @Test
     public void shouldBeTestParameterSum() {
         Calculator calc = new Calculator();
-        assertThat("Should be wrong somewhere", calc.multiplication(d1, d2), is(result));
+        assertThat("Should sum of two digits", calc.multiplication(d1, multiplied), is(result));
     }
 }
