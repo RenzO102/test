@@ -26,7 +26,7 @@ public class CalcTestMultiplication {
                 {2, 6, 12},
                 {18, 18, 324},
                 {15, 1, 15},
-                {2147483647, 2, -2}};
+                {2, 2, 4}};
         return Arrays.asList(data);
     }
 

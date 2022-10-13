@@ -27,7 +27,7 @@ public class CalcTestSum {
                 {2, 6, 8},
                 {18, 18, 36},
                 {15, 1, 16},
-                {1, 2147483647, -2147483648}};
+                {1, 1, 2}};
         return Arrays.asList(data);
     }
 
