@@ -2,7 +2,6 @@ package ru.github.com.RenzO102;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
@@ -14,7 +13,6 @@ import static org.junit.Assert.assertThat;
 public class CalcTest {
 
     @Test
-    @Step("3+2=5")
     @Description("Вводится два числа и проверяется их сумма")
     @DisplayName("Суммирование одного числа с другим")
     public void shouldTestSumTwoDigits() {
@@ -23,7 +21,6 @@ public class CalcTest {
     }
 
     @Test
-    @Step("12-5=7")
     @Description("Вводится два числа и проверяется их разность")
     @DisplayName("Вычитание из одного числа другое")
     public void shouldTestDifferenceTwoDigits() {
@@ -32,7 +29,6 @@ public class CalcTest {
     }
 
     @Test
-    @Step("3/3=1")
     @Description("Вводится два числа и проверяется их деление")
     @DisplayName("Деление одного числа на другое")
     public void shouldTestDivisionTwoDigits() {
@@ -41,7 +37,6 @@ public class CalcTest {
     }
 
     @Test
-    @Step("12*0=0")
     @Description("Вводится два числа и проверяется их произведение")
     @DisplayName("Умножение одного числа на другое")
     public void shouldTestMultiplicationTwoDigits() {
