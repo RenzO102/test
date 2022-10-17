@@ -23,7 +23,7 @@ public class DivTest {
     @Parameterized.Parameter(2)
     public int result;
 
-    @Parameterized.Parameters(name = " {0} / {1} = {2}")
+    @Parameterized.Parameters(name = "{0} / {1} = {2}")
     public static Iterable<Object[]> data() {
         Object[][] data = new Object[][]{
                 {4, 2, 2},
