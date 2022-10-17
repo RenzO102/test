@@ -2,7 +2,6 @@ package ru.github.com.RenzO102;
 
 import io.qameta.allure.Step;
 
-
 public class Calculator {
 
     @Step("Сложение {a} и {b}")
