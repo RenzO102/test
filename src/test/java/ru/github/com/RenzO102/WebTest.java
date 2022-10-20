@@ -13,18 +13,17 @@ abstract public class WebTest {
 
     @Before
     public void setUp() {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-            SeleniumPage.setDriver(driver);
-
-        }
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        SeleniumPage.setDriver(driver);
+    }
 
     @After
     public void tearDown() {
-       // driver.close();
-       // driver.quit();
+        // driver.close();
+        // driver.quit();
     }
 }
