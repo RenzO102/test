@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-abstract public class WebTest {
+abstract public class WebDriverInic {
     protected WebDriver driver;
 
     @Before
@@ -23,7 +23,7 @@ abstract public class WebTest {
 
     @After
     public void tearDown() {
-        // driver.close();
-        // driver.quit();
+        driver.close();
+        driver.quit();
     }
 }
