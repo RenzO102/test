@@ -23,7 +23,7 @@ abstract public class WebDriverInic {
 
     @After
     public void tearDown() {
-        driver.close();
-        driver.quit();
+      driver.close();
+      driver.quit();
     }
 }

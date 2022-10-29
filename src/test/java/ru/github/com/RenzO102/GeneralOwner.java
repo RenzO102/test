@@ -2,17 +2,15 @@ package ru.github.com.RenzO102;
 
 import org.aeonbits.owner.Config;
 
- @Config.Sources({"classpath:general.properties"})
+@Config.Sources({"classpath:general.properties"})
  public interface GeneralOwner extends Config{
 
-     String target();
+     @Key("Url")
+     String Url();
 
-     @Config.Key("url.base")
-     String url();
-
-     @Config.Key("email")
+     @Key("email")
      String email();
 
-     @Config.Key("password")
+     @Key("password")
      String password();
 }
